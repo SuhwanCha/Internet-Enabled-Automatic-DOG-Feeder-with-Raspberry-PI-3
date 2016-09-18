@@ -1,32 +1,22 @@
 <?php
   class apis{
     private $host = "db.home.gdb.kr";
-    private $dbname = "feed";
+    private $dbname = "home";
     private $user = "root";
     private $pw = "*************";
+    private $conn;
 
-    public function __construct(mod){
-      if(!isset($_SESSION['id'])) die();
-      switch(mod){
-        case "feed":
-          $this->feed();
-          break;
-        case "start":
-          $this->run();
-          break;
-      }
+    public function __construct(){
+      $this->conn = mysqli_connect($this->host,$this->user,$this->pw,$this->dbname);
     }
     private function feed(){
-      $connection = mysqli_connect($this->host, $this->dbname, $this->user, $this->pw);
-      $sql = "";
-      mysqli_connect($connection,$sql);
+      try{
+        system("sudo python ./feed.py");
+      } catch (Exception $e){
+        echo "<script>alert('실패');location.href='/';</script>";
+      }
     }
     private function start(){
-      $connection = mysqli_connect($this->host, $this->dbname, $this->user, $this->pw);
-      $sql = "";
-      mysqli_connect($connection,$sql);
-      system("sudo python motor.py");
-
     }
   }
 

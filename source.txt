@@ -1,2 +1,5 @@
+web
+based on https://startbootstrap.com/template-overviews/new-age/
+
 /01_image/회로 연결/초음파센서 연결도.png
 https://www.modmypi.com/blog/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi

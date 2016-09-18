@@ -1,0 +1,26 @@
+#main{
+  position:absolute;
+  height:calc(100vh - 50px);
+  width:100vw;
+  /*background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;*/
+  overflow: hidden;
+}
+.navbar{
+  margin-bottom: 0 !important
+}
+.row{
+  margin-top:20px;
+}
+.btn{
+  width: calc(100vw - 100px);
+  height: 50px;
+}
+.col-xs-4{
+  text-align: center;
+}
+.col-xs-4 > img{
+  width:80%;
+}
