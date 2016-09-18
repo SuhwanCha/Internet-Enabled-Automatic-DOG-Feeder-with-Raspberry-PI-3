@@ -28,7 +28,7 @@ HTML5, CSS3, Jquery
 Json
 
 ###Embedded
-With C Lang, GCC compiler
+With Python 2.7.x
 
 ##Version
-v0.2 / 16. 8. 21
+v1.0 beta / 16.09.18
