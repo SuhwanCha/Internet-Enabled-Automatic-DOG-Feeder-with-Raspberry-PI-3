@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:8080/dashboard -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:8080/assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="http://localhost:8080/assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Smarthome</title>
+
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="viewport" content="width=device-width">
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="./Smarthome_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation library for notifications   -->
+    <link href="./Smarthome_files/animate.min.css" rel="stylesheet">
+
+    <!--  Paper Dashboard core CSS    -->
+    <link href="./Smarthome_files/paper-dashboard.css" rel="stylesheet">
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="./Smarthome_files/demo.css" rel="stylesheet">
+
+
+    <!--  Fonts and icons     -->
+    <link href="./Smarthome_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./Smarthome_files/css" rel="stylesheet" type="text/css">
+    <link href="./Smarthome_files/themify-icons.css" rel="stylesheet">
+
+<style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style><script type="text/javascript" charset="UTF-8" src="./Smarthome_files/common.js.다운로드"></script><script type="text/javascript" charset="UTF-8" src="./Smarthome_files/util.js.다운로드"></script><script type="text/javascript" charset="UTF-8" src="./Smarthome_files/stats.js.다운로드"></script></head>
+<body cz-shortcut-listen="true">
+
+<div class="wrapper">
+    <div class="sidebar" data-background-color="white" data-active-color="danger">
+
+    <!--
+		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+	-->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="http://localhost:8080/dashboard" class="simple-text">
+                    SmartHome
+                </a>
+            </div>
+            <ul class="nav">
+                <li id="Dashboard" class="active">
+                    <a href="http://localhost:8080/dashboard">
+                        <i class="ti-panel"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8080/user.html">
+                        <i class="ti-user"></i>
+                        <p>User Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8080/table.html">
+                        <i class="ti-view-list-alt"></i>
+                        <p>Table List</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8080/typography.html">
+                        <i class="ti-text"></i>
+                        <p>Typography</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8080/icons.html">
+                        <i class="ti-pencil-alt2"></i>
+                        <p>Icons</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8080/maps.html">
+                        <i class="ti-map"></i>
+                        <p>Maps</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8080/notifications.html">
+                        <i class="ti-bell"></i>
+                        <p>Notifications</p>
+                    </a>
+                </li>
+            </ul>
+    	</div>
+    </div>
+    <div class="main-panel">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://localhost:8080/dashboard#"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="http://localhost:8080/dashboard#" class="dropdown-toggle" data-toggle="dropdown">
+                              <p>차수환</p>
+                            </a>
+                        </li>
+                        <li>
+                              <a href="http://localhost:8080/logout" onclick="event.preventDefault();
+                                           document.getElementById(&#39;logout-form&#39;).submit();">
+                                  LOGOUT
+                              </a>
+															<form id="logout-form" action="http://localhost:8080/logout" method="POST" style="display: none;">
+																	<input type="hidden" name="_token" value="BJyGogpMbhWL5UGyJUIJof2hdCQB4FjZCajSletV">
+															</form>
+
+                            
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="icon-big icon-warning text-center">
+                                        <i class="ti-server"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="numbers">
+                                        <p>Capacity</p>
+                                        105GB
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <hr>
+                                <div class="stats">
+                                    <i class="ti-reload"></i> Updated now
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="icon-big icon-success text-center">
+                                        <i class="ti-wallet"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="numbers">
+                                        <p>Revenue</p>
+                                        $1,345
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <hr>
+                                <div class="stats">
+                                    <i class="ti-calendar"></i> Last day
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="icon-big icon-danger text-center">
+                                        <i class="ti-pulse"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="numbers">
+                                        <p>Errors</p>
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <hr>
+                                <div class="stats">
+                                    <i class="ti-timer"></i> In the last hour
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="icon-big icon-info text-center">
+                                        <i class="ti-twitter-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="numbers">
+                                        <p>Followers</p>
+                                        +45
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <hr>
+                                <div class="stats">
+                                    <i class="ti-reload"></i> Updated now
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h4 class="title">Users Behavior</h4>
+                            <p class="category">24 Hours performance</p>
+                        </div>
+                        <div class="content">
+                            <div id="chartHours" class="ct-chart"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="245px" class="ct-chart-line" style="width: 100%; height: 245px;"><g class="ct-grids"><line y1="210" y2="210" x1="50" x2="1538" class="ct-grid ct-vertical"></line><line y1="171" y2="171" x1="50" x2="1538" class="ct-grid ct-vertical"></line><line y1="132" y2="132" x1="50" x2="1538" class="ct-grid ct-vertical"></line><line y1="93" y2="93" x1="50" x2="1538" class="ct-grid ct-vertical"></line><line y1="54" y2="54" x1="50" x2="1538" class="ct-grid ct-vertical"></line><line y1="15" y2="15" x1="50" x2="1538" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><path d="M50,210L50,154.035C112,154.035,174,134.925,236,134.925C298,134.925,360,114.45,422,114.45C484,114.45,546,100.41,608,100.41C670,100.41,732,94.17,794,94.17C856,94.17,918,87.93,980,87.93C1042,87.93,1104,73.89,1166,73.89C1228,73.89,1290,35.475,1352,35.475C1414,35.475,1476,24.36,1538,24.36L1538,210Z" class="ct-area" ct:values="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></path><path d="M50,154.035C112,154.035,174,134.925,236,134.925C298,134.925,360,114.45,422,114.45C484,114.45,546,100.41,608,100.41C670,100.41,732,94.17,794,94.17C856,94.17,918,87.93,980,87.93C1042,87.93,1104,73.89,1166,73.89C1228,73.89,1290,35.475,1352,35.475C1414,35.475,1476,24.36,1538,24.36" class="ct-line"></path></g><g class="ct-series ct-series-b"><path d="M50,210L50,196.935C112,196.935,174,180.36,236,180.36C298,180.36,360,172.365,422,172.365C484,172.365,546,163.2,608,163.2C670,163.2,732,134.535,794,134.535C856,134.535,918,125.175,980,125.175C1042,125.175,1104,105.675,1166,105.675C1228,105.675,1290,84.81,1352,84.81C1414,84.81,1476,64.92,1538,64.92L1538,210Z" class="ct-area" ct:values="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></path><path d="M50,196.935C112,196.935,174,180.36,236,180.36C298,180.36,360,172.365,422,172.365C484,172.365,546,163.2,608,163.2C670,163.2,732,134.535,794,134.535C856,134.535,918,125.175,980,125.175C1042,125.175,1104,105.675,1166,105.675C1228,105.675,1290,84.81,1352,84.81C1414,84.81,1476,64.92,1538,64.92" class="ct-line"></path></g><g class="ct-series ct-series-c"><path d="M50,210L50,205.515C112,205.515,174,187.965,236,187.965C298,187.965,360,196.935,422,196.935C484,196.935,546,188.94,608,188.94C670,188.94,732,172.95,794,172.95C856,172.95,918,163.395,980,163.395C1042,163.395,1104,150.135,1166,150.135C1228,150.135,1290,130.05,1352,130.05C1414,130.05,1476,130.05,1538,130.05L1538,210Z" class="ct-area" ct:values="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></path><path d="M50,205.515C112,205.515,174,187.965,236,187.965C298,187.965,360,196.935,422,196.935C484,196.935,546,188.94,608,188.94C670,188.94,732,172.95,794,172.95C856,172.95,918,163.395,980,163.395C1042,163.395,1104,150.135,1166,150.135C1228,150.135,1290,130.05,1352,130.05C1414,130.05,1476,130.05,1538,130.05" class="ct-line"></path></g></g><g class="ct-labels"><foreignobject style="overflow: visible;" x="50" y="215" width="186" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 186px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">9:00AM</span></foreignobject><foreignobject style="overflow: visible;" x="236" y="215" width="186" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 186px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">12:00AM</span></foreignobject><foreignobject style="overflow: visible;" x="422" y="215" width="186" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 186px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">3:00PM</span></foreignobject><foreignobject style="overflow: visible;" x="608" y="215" width="186" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 186px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">6:00PM</span></foreignobject><foreignobject style="overflow: visible;" x="794" y="215" width="186" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 186px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">9:00PM</span></foreignobject><foreignobject style="overflow: visible;" x="980" y="215" width="186" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 186px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">12:00PM</span></foreignobject><foreignobject style="overflow: visible;" x="1166" y="215" width="186" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 186px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">3:00AM</span></foreignobject><foreignobject style="overflow: visible;" x="1352" y="215" width="186" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 186px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">6:00AM</span></foreignobject><foreignobject style="overflow: visible;" y="171" x="10" height="39" width="30"><span class="ct-label ct-vertical ct-start" style="height: 39px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">0</span></foreignobject><foreignobject style="overflow: visible;" y="132" x="10" height="39" width="30"><span class="ct-label ct-vertical ct-start" style="height: 39px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">200</span></foreignobject><foreignobject style="overflow: visible;" y="93" x="10" height="39" width="30"><span class="ct-label ct-vertical ct-start" style="height: 39px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">400</span></foreignobject><foreignobject style="overflow: visible;" y="54" x="10" height="39" width="30"><span class="ct-label ct-vertical ct-start" style="height: 39px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">600</span></foreignobject><foreignobject style="overflow: visible;" y="15" x="10" height="39" width="30"><span class="ct-label ct-vertical ct-start" style="height: 39px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">800</span></foreignobject><foreignobject style="overflow: visible;" y="-15" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">1000</span></foreignobject></g></svg></div>
+                            <div class="footer">
+                                <div class="chart-legend">
+                                    <i class="fa fa-circle text-info"></i> Open
+                                    <i class="fa fa-circle text-danger"></i> Click
+                                    <i class="fa fa-circle text-warning"></i> Click Second Time
+                                </div>
+                                <hr>
+                                <div class="stats">
+                                    <i class="ti-reload"></i> Updated 3 minutes ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="header">
+                            <h4 class="title">Email Statistics</h4>
+                            <p class="category">Last Campaign Performance</p>
+                        </div>
+                        <div class="content">
+                            <div id="chartPreferences" class="ct-chart ct-perfect-fourth"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-pie" style="width: 100%; height: 100%;"><g class="ct-series ct-series-c"><path d="M373.5,5A117.5,117.5,0,0,0,329.864,13.403L373.5,122.5Z" class="ct-slice-pie" ct:value="6"></path></g><g class="ct-series ct-series-b"><path d="M330.245,13.251A117.5,117.5,0,0,0,293.365,208.434L373.5,122.5Z" class="ct-slice-pie" ct:value="32"></path></g><g class="ct-series ct-series-a"><path d="M293.066,208.154A117.5,117.5,0,1,0,373.5,5L373.5,122.5Z" class="ct-slice-pie" ct:value="62"></path></g><g><text dx="428.1243685459348" dy="144.12731747022482" text-anchor="middle" class="ct-label">62%</text><text dx="315.7906240196895" dy="111.49134776808874" text-anchor="middle" class="ct-label">32%</text><text dx="362.49134776808864" dy="64.79062401968955" text-anchor="middle" class="ct-label">6%</text></g></svg></div>
+
+                            <div class="footer">
+                                <div class="chart-legend">
+                                    <i class="fa fa-circle text-info"></i> Open
+                                    <i class="fa fa-circle text-danger"></i> Bounce
+                                    <i class="fa fa-circle text-warning"></i> Unsubscribe
+                                </div>
+                                <hr>
+                                <div class="stats">
+                                    <i class="ti-timer"></i> Campaign sent 2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card ">
+                        <div class="header">
+                            <h4 class="title">2015 Sales</h4>
+                            <p class="category">All products including Taxes</p>
+                        </div>
+                        <div class="content">
+                            <div id="chartActivity" class="ct-chart"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="245px" class="ct-chart-line" style="width: 100%; height: 245px;"><g class="ct-grids"><line y1="210" y2="210" x1="50" x2="732" class="ct-grid ct-vertical"></line><line y1="182.14285714285714" y2="182.14285714285714" x1="50" x2="732" class="ct-grid ct-vertical"></line><line y1="154.28571428571428" y2="154.28571428571428" x1="50" x2="732" class="ct-grid ct-vertical"></line><line y1="126.42857142857143" y2="126.42857142857143" x1="50" x2="732" class="ct-grid ct-vertical"></line><line y1="98.57142857142857" y2="98.57142857142857" x1="50" x2="732" class="ct-grid ct-vertical"></line><line y1="70.71428571428572" y2="70.71428571428572" x1="50" x2="732" class="ct-grid ct-vertical"></line><line y1="42.85714285714286" y2="42.85714285714286" x1="50" x2="732" class="ct-grid ct-vertical"></line><line y1="15" y2="15" x1="50" x2="732" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><path d="M50,114.729C59.472,114.682,87.889,113.429,106.833,114.45C125.778,115.471,144.722,127.218,163.667,120.857C182.611,114.496,201.556,82.461,220.5,76.286C239.444,70.111,258.389,87.196,277.333,83.807C296.278,80.418,315.222,40.768,334.167,55.95C353.111,71.132,372.056,160.089,391,174.9C409.944,189.711,428.889,156.05,447.833,144.814C466.778,133.579,485.722,115.657,504.667,107.486C523.611,99.314,542.556,104.514,561.5,95.786C580.444,87.057,599.389,68.346,618.333,55.114C637.278,41.882,665.694,22.846,675.167,16.393" class="ct-line"></path><line x1="50" y1="114.72857142857143" x2="50.01" y2="114.72857142857143" class="ct-point" ct:value="542"></line><line x1="106.83333333333334" y1="114.45" x2="106.84333333333335" y2="114.45" class="ct-point" ct:value="543"></line><line x1="163.66666666666669" y1="120.85714285714286" x2="163.67666666666668" y2="120.85714285714286" class="ct-point" ct:value="520"></line><line x1="220.5" y1="76.28571428571428" x2="220.51" y2="76.28571428571428" class="ct-point" ct:value="680"></line><line x1="277.33333333333337" y1="83.80714285714286" x2="277.34333333333336" y2="83.80714285714286" class="ct-point" ct:value="653"></line><line x1="334.1666666666667" y1="55.94999999999999" x2="334.1766666666667" y2="55.94999999999999" class="ct-point" ct:value="753"></line><line x1="391" y1="174.9" x2="391.01" y2="174.9" class="ct-point" ct:value="326"></line><line x1="447.83333333333337" y1="144.81428571428572" x2="447.84333333333336" y2="144.81428571428572" class="ct-point" ct:value="434"></line><line x1="504.6666666666667" y1="107.48571428571428" x2="504.6766666666667" y2="107.48571428571428" class="ct-point" ct:value="568"></line><line x1="561.5" y1="95.78571428571429" x2="561.51" y2="95.78571428571429" class="ct-point" ct:value="610"></line><line x1="618.3333333333334" y1="55.11428571428573" x2="618.3433333333334" y2="55.11428571428573" class="ct-point" ct:value="756"></line><line x1="675.1666666666667" y1="16.39285714285714" x2="675.1766666666667" y2="16.39285714285714" class="ct-point" ct:value="895"></line></g><g class="ct-series ct-series-b"><path d="M50,201.643C59.472,198.718,87.889,191.057,106.833,184.093C125.778,177.129,144.722,168.539,163.667,159.857C182.611,151.175,201.556,137.711,220.5,132C239.444,126.289,258.389,128.982,277.333,125.593C296.278,122.204,315.222,116.168,334.167,111.664C353.111,107.161,372.056,103.725,391,98.571C409.944,93.418,428.889,85.293,447.833,80.743C466.778,76.193,485.722,73.407,504.667,71.271C523.611,69.136,542.556,69.693,561.5,67.929C580.444,66.164,599.389,64.632,618.333,60.686C637.278,56.739,665.694,46.989,675.167,44.25" class="ct-line"></path><line x1="50" y1="201.64285714285714" x2="50.01" y2="201.64285714285714" class="ct-point" ct:value="230"></line><line x1="106.83333333333334" y1="184.09285714285716" x2="106.84333333333335" y2="184.09285714285716" class="ct-point" ct:value="293"></line><line x1="163.66666666666669" y1="159.85714285714286" x2="163.67666666666668" y2="159.85714285714286" class="ct-point" ct:value="380"></line><line x1="220.5" y1="132" x2="220.51" y2="132" class="ct-point" ct:value="480"></line><line x1="277.33333333333337" y1="125.59285714285714" x2="277.34333333333336" y2="125.59285714285714" class="ct-point" ct:value="503"></line><line x1="334.1666666666667" y1="111.66428571428571" x2="334.1766666666667" y2="111.66428571428571" class="ct-point" ct:value="553"></line><line x1="391" y1="98.57142857142857" x2="391.01" y2="98.57142857142857" class="ct-point" ct:value="600"></line><line x1="447.83333333333337" y1="80.74285714285713" x2="447.84333333333336" y2="80.74285714285713" class="ct-point" ct:value="664"></line><line x1="504.6666666666667" y1="71.27142857142857" x2="504.6766666666667" y2="71.27142857142857" class="ct-point" ct:value="698"></line><line x1="561.5" y1="67.92857142857142" x2="561.51" y2="67.92857142857142" class="ct-point" ct:value="710"></line><line x1="618.3333333333334" y1="60.68571428571428" x2="618.3433333333334" y2="60.68571428571428" class="ct-point" ct:value="736"></line><line x1="675.1666666666667" y1="44.25" x2="675.1766666666667" y2="44.25" class="ct-point" ct:value="795"></line></g></g><g class="ct-labels"><foreignobject style="overflow: visible;" x="50" y="215" width="56.833333333333336" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Jan</span></foreignobject><foreignobject style="overflow: visible;" x="106.83333333333334" y="215" width="56.833333333333336" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Feb</span></foreignobject><foreignobject style="overflow: visible;" x="163.66666666666669" y="215" width="56.83333333333333" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Mar</span></foreignobject><foreignobject style="overflow: visible;" x="220.5" y="215" width="56.83333333333334" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Apr</span></foreignobject><foreignobject style="overflow: visible;" x="277.33333333333337" y="215" width="56.83333333333334" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Mai</span></foreignobject><foreignobject style="overflow: visible;" x="334.1666666666667" y="215" width="56.833333333333314" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Jun</span></foreignobject><foreignobject style="overflow: visible;" x="391" y="215" width="56.83333333333337" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Jul</span></foreignobject><foreignobject style="overflow: visible;" x="447.83333333333337" y="215" width="56.833333333333314" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Aug</span></foreignobject><foreignobject style="overflow: visible;" x="504.6666666666667" y="215" width="56.833333333333314" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Sep</span></foreignobject><foreignobject style="overflow: visible;" x="561.5" y="215" width="56.83333333333337" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Oct</span></foreignobject><foreignobject style="overflow: visible;" x="618.3333333333334" y="215" width="56.83333333333337" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Nov</span></foreignobject><foreignobject style="overflow: visible;" x="675.1666666666667" y="215" width="56.83333333333326" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 57px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Dec</span></foreignobject><foreignobject style="overflow: visible;" y="182.14285714285714" x="10" height="27.857142857142858" width="30"><span class="ct-label ct-vertical ct-start" style="height: 28px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">200</span></foreignobject><foreignobject style="overflow: visible;" y="154.28571428571428" x="10" height="27.857142857142858" width="30"><span class="ct-label ct-vertical ct-start" style="height: 28px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">300</span></foreignobject><foreignobject style="overflow: visible;" y="126.42857142857142" x="10" height="27.857142857142854" width="30"><span class="ct-label ct-vertical ct-start" style="height: 28px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">400</span></foreignobject><foreignobject style="overflow: visible;" y="98.57142857142857" x="10" height="27.85714285714286" width="30"><span class="ct-label ct-vertical ct-start" style="height: 28px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">500</span></foreignobject><foreignobject style="overflow: visible;" y="70.71428571428572" x="10" height="27.857142857142847" width="30"><span class="ct-label ct-vertical ct-start" style="height: 28px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">600</span></foreignobject><foreignobject style="overflow: visible;" y="42.85714285714286" x="10" height="27.85714285714286" width="30"><span class="ct-label ct-vertical ct-start" style="height: 28px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">700</span></foreignobject><foreignobject style="overflow: visible;" y="15" x="10" height="27.85714285714286" width="30"><span class="ct-label ct-vertical ct-start" style="height: 28px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">800</span></foreignobject><foreignobject style="overflow: visible;" y="-15" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">900</span></foreignobject></g></svg></div>
+
+                            <div class="footer">
+                                <div class="chart-legend">
+                                    <i class="fa fa-circle text-info"></i> Tesla Model S
+                                    <i class="fa fa-circle text-warning"></i> BMW 5 Series
+                                </div>
+                                <hr>
+                                <div class="stats">
+                                    <i class="ti-check"></i> Data information certified
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <nav class="pull-left">
+                <ul>
+
+                    <li>
+                        <a href="http://www.creative-tim.com/">
+                            Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.creative-tim.com/">
+                           Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.creative-tim.com/license">
+                            Licenses
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright pull-right">
+                © <script>document.write(new Date().getFullYear())</script>2016, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com/">Creative Tim</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</div>
+
+
+
+
+    <!--   Core JS Files   -->
+    <script src="./Smarthome_files/jquery-1.10.2.js.다운로드" type="text/javascript"></script>
+	<script src="./Smarthome_files/bootstrap.min.js.다운로드" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="./Smarthome_files/bootstrap-checkbox-radio.js.다운로드"></script>
+
+	<!--  Charts Plugin -->
+	<script src="./Smarthome_files/chartist.min.js.다운로드"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="./Smarthome_files/bootstrap-notify.js.다운로드"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="./Smarthome_files/js"></script>
+
+    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+	<script src="./Smarthome_files/paper-dashboard.js.다운로드"></script>
+
+	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+	<script src="./Smarthome_files/demo.js.다운로드"></script>
+
+	<script type="text/javascript">
+    	$(document).ready(function(){
+
+        	demo.initChartist();
+
+        	// $.notify({
+          //   	icon: 'ti-gift',
+          //   	message: "Welcome to <b>Paper Dashboard</b> - a beautiful Bootstrap freebie for your next project."
+          //
+          //   },{
+          //       type: 'success',
+          //       timer: 4000
+          //   });
+
+    	});
+	</script>
+  <script>
+    $(document).ready(function(){
+      temp = $.trim('Dashboard');
+      $("#"+temp).addClass('active');
+    });
+  </script>
+
+
+</body></html>
