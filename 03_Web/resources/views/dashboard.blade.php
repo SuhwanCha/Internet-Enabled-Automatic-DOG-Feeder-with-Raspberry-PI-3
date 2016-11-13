@@ -3,7 +3,9 @@
   $yd = DB::table('feed')
   ->where('created_at','like',date("Y-m-d",strtotime ("-1 days")).'%')->get();
   $td = DB::table('feed')
-  ->where('created_at','like',date("Y-m-d", time()).'%')->get();
+  ->where('created_at','like',date("Y-m-d", time()).'%')
+  ->orderBy('created_at', 'desc')
+  ->get();
   $total = DB::table('feed')
                   ->latest()
                   ->first();
@@ -218,7 +220,7 @@ $(document).ready(function(){
           var optionsSales = {
             lineSmooth: false,
             low: 0,
-            high: 10,
+            high: 30,
             showArea: true,
             height: "245px",
             axisX: {

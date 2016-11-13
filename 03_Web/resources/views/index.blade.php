@@ -44,7 +44,7 @@
             <li><a href="{{ url('/register') }}">Register</a></li>
         @else
             <li><a href="{{ url('/dashboard') }}">DashBoard</a></li>
-            <li><a href="{{ url('/schedule') }}">Scheldule</a></li>
+            <!-- <li><a href="{{ url('/schedule') }}">Scheldule</a></li> -->
             <li><a href="{{ url('/logout') }}" onclick="event.preventDefault();
                      document.getElementById('logout-form').submit();">Logout</a></li>
         @endif
