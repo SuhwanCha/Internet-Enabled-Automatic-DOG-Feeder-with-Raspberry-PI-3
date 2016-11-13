@@ -1,0 +1,17 @@
+.footer{
+  width:100vw;
+  height:50px;
+  position:fixed;
+  bottom:0;
+  background-color:black;
+  text-align: center;
+  color:white;
+}
+.footer > p{
+  line-height: 20px;
+}
+#main{
+  padding-bottom:70px;
+  min-height: calc(100vh - 100px);
+  /*background-image: url('/img/bg1.jpg');*/
+}

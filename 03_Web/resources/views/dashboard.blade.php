@@ -345,8 +345,8 @@ function run(){
       }
     });
     $.ajax({
-        type:"GET",
-        url:"/add",
+        type:"get",
+        url:"/tttt",
         success:function(args){
         }
       });

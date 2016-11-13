@@ -23,12 +23,12 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function add(){
-      DB::table('feed')->insert([
-        ['created_at'=>date('Y-m-d H:i:s',time())],
-        ['updated'=>date('Y-m-d H:i:s',time())]
-
-      ]
-      );
+      // DB::table('feed')->insert([
+      //   ['created_at'=>date('Y-m-d H:i:s',time())],
+      //   ['updated'=>date('Y-m-d H:i:s',time())]
+      //
+      // ]
+      // );
     }
     public function index()
     {

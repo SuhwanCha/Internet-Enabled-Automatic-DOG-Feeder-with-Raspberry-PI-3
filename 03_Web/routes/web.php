@@ -32,11 +32,9 @@ Route::get('register', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/add', function(){
+Route::get('/tttt', function(){
   DB::table('feed')->insert([
-    ['created_at'=>date('Y-m-d H:i:s',time())],
-    ['updated'=>date('Y-m-d H:i:s',time())]
-
+    ['created_at'=>date('Y-m-d H:i:s',time())]
   ]
   );
 });
