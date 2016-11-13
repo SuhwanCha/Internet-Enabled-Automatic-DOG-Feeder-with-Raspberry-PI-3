@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class HomeController extends Controller
 {
@@ -21,6 +22,14 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function add(){
+      DB::table('feed')->insert([
+        ['created_at'=>date('Y-m-d H:i:s',time())],
+        ['updated'=>date('Y-m-d H:i:s',time())]
+
+      ]
+      );
+    }
     public function index()
     {
         return view('home');

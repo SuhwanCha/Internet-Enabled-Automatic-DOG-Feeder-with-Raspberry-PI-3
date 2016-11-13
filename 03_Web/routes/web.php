@@ -32,6 +32,14 @@ Route::get('register', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/add', function(){
+  DB::table('feed')->insert([
+    ['created_at'=>date('Y-m-d H:i:s',time())],
+    ['updated'=>date('Y-m-d H:i:s',time())]
+
+  ]
+  );
+});
 Route::get('/schedule', 'HomeController@schedule');
 Route::get('/dashboard', 'HomeController@dashboard');
 Route::get('/user', 'HomeController@dashboard');

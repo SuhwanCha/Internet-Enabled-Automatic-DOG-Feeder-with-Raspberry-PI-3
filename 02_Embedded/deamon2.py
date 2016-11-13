@@ -2,8 +2,6 @@ import RPi.GPIO as gpio
 import time
 import os
 import sys
-#from urllib.request import urlopen, quote
-
 
 gpio.setmode(gpio.BCM)
 
@@ -33,10 +31,9 @@ try :
          pulse_duration = pulse_end - pulse_start
          distance = pulse_duration * 17000
          distance = round(distance, 2)
-#         print "Distance : ", distance, "cm" 
-     if distance < 30 and distance > 10 :
-#	 urlopen('https://home.gdb.kr/add');
-         os.system("python ./motor.py")
+         print "Distance : ", distance, "cm" 
+#     if distance < 10 :
+#         os.system("python ./motor.py")
 except :
     gpio.cleanup()
 

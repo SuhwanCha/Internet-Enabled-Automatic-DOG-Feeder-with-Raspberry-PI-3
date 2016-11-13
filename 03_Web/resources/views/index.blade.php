@@ -7,7 +7,7 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-    <title>Sssoon Page </title>
+    <title>gdb.kr | Smarthome Service</title>
 
     <link href="css/bootstrap.css" rel="stylesheet" />
 	<link href="css/coming-sssoon.css" rel="stylesheet" />
@@ -15,7 +15,12 @@
     <!--     Fonts     -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
-
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<style>
+		*{
+			font-family: 'Josefin Sans', sans-serif !important;
+		}
+		</style>
 </head>
 
 <body>
@@ -43,24 +48,12 @@
             <li><a href="{{ url('/logout') }}" onclick="event.preventDefault();
                      document.getElementById('logout-form').submit();">Logout</a></li>
         @endif
-             <!-- <li>
-                <a href="#">
-                    <i class="fa fa-twitter"></i>
-                    Tweet
-                </a>
-            </li>
-             <li>
-                <a href="#">
-                    <i class="fa fa-envelope-o"></i>
-                    Email
-                </a>
-            </li> -->
        </ul>
 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
-<div class="main" style="background-image: url('images/default.jpg')">
+<div class="main" style="background-image: url('img/bg.jpg')">
 
 <!--    Change the image source '/images/default.jpg' with your favourite image.     -->
 
@@ -78,13 +71,13 @@
             <h4 class="motto">Improve your life with GDB.KR</h4>
             <div class="subscribe">
                 <h5 class="info-text">
-                    Copyright gdb.kr 2016 All right reserved
+                    Copyright gdb.kr Co. 2016 All right reserved
                 </h5>
                 <h5 class="info-text">
-                    Developed by Suhwan Cha
+                    Developed by Suhwan Cha, gdb.kr Co. CEO
                 </h5>
                 <h5 class="info-text">
-                    View smarthome Project in <a href="https://github.com/SuhwanCha/Internet-Enabled-Automatic-DOG-Feeder-with-Raspberry-PI-3">Github</a> <i class="fa fa-github">
+                    View smarthome Project in <a href="https://github.com/SuhwanCha/Internet-Enabled-Automatic-DOG-Feeder-with-Raspberry-PI-3">Github</a>
                 </h5>
 
             </div>
@@ -92,7 +85,7 @@
     </div>
     <div class="footer">
       <div class="container">
-             Special Thanks to <a href="http://www.creative-tim.com">Creative Tim</a>.
+             Designed by <a href="http://www.creative-tim.com">Creative Tim</a>.
       </div>
     </div>
  </div>

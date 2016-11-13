@@ -10,8 +10,18 @@ p.start(0)
 cnt = 0
 try:
     p.ChangeDutyCycle(1)
-    time.sleep(3)
+    time.sleep(0.5)
     p.stop()
 except KeyboardInterrupt:
     p.stop()
+p.start(0)
+cnt = 0 
+try:      
+    p.ChangeDutyCycle(1)
+    time.sleep(0.5)
+    p.stop() 
+except KeyboardInterrupt:
+    p.stop()
+
 GPIO.cleanup()
+
